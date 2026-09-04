@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Quotes Generator ⚡</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quote-container">
+        <div class="card-badge">✨ Anime Inspiration</div>
+        
+        <div class="quote-mark">“</div>
+        <blockquote class="quote-text">
+            <%= quote.data.content %>
+        </blockquote>
+        
+        <div class="quote-author-info">
+            <span class="character-name">— <%= quote.data.character.name %></span>
+            <span class="anime-pill">📺 <%= quote.data.anime.name %></span>
+        </div>
+
+        <div class="action-box">
+            <a href="/" class="btn-refresh">🎲 Get Another Quote</a>
+        </div>
+    </div>
+</body>
+</html>
